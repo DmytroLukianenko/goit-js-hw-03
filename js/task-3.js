@@ -1,10 +1,6 @@
 "use strict";
 const findBestEmployee = function (employees) {
   // твой код
-  //   let max = 0;
-  //   const values = Object.values(employees);
-  //   console.table(employees);
-  //   max = Math.max.apply(null, values);
   let max = 0;
   let bestEmployee = null;
 

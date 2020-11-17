@@ -8,7 +8,10 @@ const products = [
 
 const getAllPropValues = function (arr, prop) {
   // твой код
-  return arr.map((arr) => arr[prop]);
+  return arr.reduce(function (result, item) {
+    if (typeof item[prop] !== "undefined") result.push(item[prop]);
+    return result;
+  }, []);
 };
 
 /*
